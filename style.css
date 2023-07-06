@@ -236,6 +236,10 @@ h1 {
     cursor: pointer;
 }
 
+.no-animation {
+    cursor: auto;
+}
+
 @media only screen and (min-width: 992px) {
     .portfolio-image-box {
         margin-left: -45px !important;
@@ -251,6 +255,10 @@ h1 {
     transition: transform .2s;
 }
 
+.no-animation {
+    transition: none;
+}
+
 @media only screen and (max-width: 992px) {
     .portfolio-image {
         max-width: 500px;
@@ -262,6 +270,10 @@ h1 {
     .portfolio-image:hover {
         transform: scale(1.05);
     }
+}
+
+.no-animation:hover {
+    transform: none;
 }
 
 .portfolio-image:hover .image-overlay {
@@ -298,12 +310,6 @@ h1 {
     color: black !important;
 }
 
-@media only screen and (min-width: 992px) {
-    .read-more-mobile {
-        display: none;
-    }
-}
-
 .languages {
     list-style-type: none;
     display: flex;
@@ -322,8 +328,13 @@ h1 {
     padding-bottom: 30px;
 }
 
-
 /* Footer */
+
+.fab {
+    font-size: 35px;
+    padding: 0 10px;
+    color: #000;
+}
 
 .footer .container {
     padding-top: 20px;

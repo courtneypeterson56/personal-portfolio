@@ -26,3 +26,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var stars = document.querySelectorAll(".star");
+
+  function repositionStarWithDelay(star) {
+    var randomTop = Math.floor(Math.random() * window.innerHeight);
+    var randomLeft = Math.floor(Math.random() * window.innerWidth);
+
+    star.style.top = randomTop + "px";
+    star.style.left = randomLeft + "px";
+
+    var randomDelay = Math.random() * 800 + 1200;
+    setTimeout(function () {
+      repositionStarWithDelay(star);
+    }, randomDelay);
+  }
+
+  function repositionStars() {
+    stars.forEach(function (star) {
+      repositionStarWithDelay(star);
+    });
+  }
+
+  // Reposition stars immediately
+  repositionStars();
+});

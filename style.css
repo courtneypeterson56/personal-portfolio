@@ -1,5 +1,16 @@
 /* Gloabl Styles */
 
+.vertical-line {
+    border-left: 3px solid #dee2e6;
+    height: 100%;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
 body {
     margin: 0;
     padding: 56px 0 0 0;
@@ -12,7 +23,7 @@ body {
 }
 
 h1 {
-    font-family: rubik-light, sans-serif;
+    font-family: Poppins, sans-serif;
     color: #A45951;
 }
 
@@ -21,7 +32,7 @@ h1 {
 }
 
 .bg-two {
-    background-color: #f1f1f1;
+    background-color: #fafafa;
 }
 
 /* Sticky navigation styles */
@@ -34,6 +45,13 @@ h1 {
 
 .navbar-toggler:focus {
     outline: none;
+}
+
+.navbar {
+    @media (min-width: 768px) {
+         margin: 0 60px;
+    }
+    
 }
 
 .navbar-brand {
@@ -72,13 +90,8 @@ h1 {
     border-bottom: none !important;
     display: flex !important;
     flex-wrap: nowrap !important;
-}
-
-@media only screen and (min-width: 630px) {
-    #section3 .nav-tabs {
-        justify-content: center;
-    }
-}
+    justify-content: center;
+}        
 
 .scrollNav {
     margin: 25px 0;
@@ -117,7 +130,23 @@ h1 {
 /* Section 1 */
 
 #section1 {
-    padding: 175px 0 100px 0;
+    height: 100vh;
+}
+
+#section1 h1 {
+    padding-top: 20%;
+    font-weight: 700;
+    letter-spacing: -.025rem;
+    font-family: Poppins, sans-serif;
+    font-size: 3rem;
+}
+
+.highlight {
+    display: inline-block;
+    padding: .1em .25em;
+    background: #F4A261;
+    color: #ffffff;
+    font-size: 2.6rem;
 }
 
 .bg-image {
@@ -144,23 +173,47 @@ h1 {
 
 .download:hover {
     color: black !important;
+    text-decoration: none;
+}
+
+.position {
+    color: #A45951;
+    font-weight: 700;
+}
+
+.download:hover .fa {
+    transform: translateY(2px);
 }
 
 #section2, #section4 {
     padding: 100px 0 100px 0;
 }
 
-.tab-content {
-    padding: 20px 0 50px
+#section2 .tab-content {
+    border-radius: 5px;
+    box-shadow: 2px 2px 11px -3px rgba(0, 0, 0, .2);
+    background: white;
+}
+
+@media only screen and (min-width: 992px) {
+    #section2 .tab-content {
+        margin: 50px -15px 0 -15px;
+    }
 }
 
 .tab-content .date {
     color: #A45951;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 .tab-content .company {
     color: black;
     text-decoration: underline;
+}
+
+.tab-pane {
+    padding: 20px;
 }
 
 .technologies {
@@ -193,8 +246,6 @@ h1 {
         margin-bottom: 80px;
     }
 }
-
-
 
 .description-box {
     border-radius: 5px;
@@ -232,6 +283,10 @@ h1 {
     max-height: 300px;
 }
 
+#item3 img {
+    width: 100%;
+}
+
 .portfolio-image-box {
     cursor: pointer;
 }
@@ -253,6 +308,12 @@ h1 {
     box-shadow: 0 0px 2px rgba(0, 0, 0, 0.2);
     background-color: white;
     transition: transform .2s;
+}
+
+@media only screen and (min-width: 992px) {
+    .portfolio-image {
+        width: 115%;
+        }
 }
 
 .no-animation {
@@ -343,3 +404,78 @@ h1 {
 
 
 
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #C1867B;
+    transform: rotate(-45deg);
+    clip-path: polygon(50% 0%,
+                61% 35%,
+                98% 35%,
+                68% 57%,
+                79% 91%,
+                50% 70%,
+                21% 91%,
+                32% 57%,
+                2% 35%,
+                39% 35%);
+}
+
+@keyframes twinklingStars {
+    0% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .5;
+    }
+}
+
+.star {
+    /* Previous styles */
+        /* Initially hide the stars */
+    pointer-events: none;
+        /* Disable pointer events to allow hover on hero background */
+    animation: twinklingStars 2s infinite;
+}
+
+.scroll-icon {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bobbing 2s infinite;
+}
+
+.fa-arrow-down {
+    color: #F4A261;
+    font-size: 4rem !important;
+}
+
+.fa-external-link {
+    margin-left: 7px;
+    color: white;
+}
+.black.fa-external-link {
+    margin-left: 1px;
+    color: black;
+}
+
+@keyframes bobbing {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}

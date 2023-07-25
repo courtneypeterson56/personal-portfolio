@@ -241,7 +241,24 @@ h1 {
 }
 
 .tab-pane {
-    padding: 20px;
+    padding: 20px 0;
+}
+
+@media only screen and (min-width: 576px) {
+   .tab-pane {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .tab-pane .container {
+        padding-left: 0;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .tab-pane .container {
+        max-width: 600px;
+    }
 }
 
 .technologies {

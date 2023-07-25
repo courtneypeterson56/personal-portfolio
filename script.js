@@ -29,10 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   var stars = document.querySelectorAll(".star");
+  var section1 = document.getElementById("section1");
 
   function repositionStarWithDelay(star) {
-    var randomTop = Math.floor(Math.random() * window.innerHeight);
-    var randomLeft = Math.floor(Math.random() * window.innerWidth);
+    var randomTop = Math.floor(Math.random() * section1.clientHeight);
+    var randomLeft = Math.floor(Math.random() * section1.clientWidth);
 
     star.style.top = randomTop + "px";
     star.style.left = randomLeft + "px";

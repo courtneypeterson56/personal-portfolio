@@ -48,7 +48,7 @@ h1 {
 }
 
 .navbar {
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
          margin: 0 60px;
     }
     
@@ -57,7 +57,7 @@ h1 {
 .navbar-brand {
     color: #A45951 !important;
 
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
         margin-left: 1rem;
     }
 }
@@ -71,7 +71,7 @@ h1 {
 }
 
 .nav-link:hover {
-    color: #A45951 !important;
+    color: #BA5B0D !important;
 }
 
 #section2 .nav-tabs {
@@ -138,7 +138,13 @@ h1 {
     font-weight: 700;
     letter-spacing: -.025rem;
     font-family: Poppins, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+    #section1 h1 {
+        font-size: 3rem;
+    }
 }
 
 .highlight {
@@ -146,7 +152,18 @@ h1 {
     padding: .1em .25em;
     background: #F4A261;
     color: #ffffff;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 576px) {
+    .highlight {
+        font-size: 2.6rem;
+    }
+}
+
+.hero {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .bg-image {
@@ -172,7 +189,7 @@ h1 {
 }
 
 .download:hover {
-    color: black !important;
+    color: #F4A261 !important;
     text-decoration: none;
 }
 
@@ -207,9 +224,20 @@ h1 {
     margin-bottom: 0;
 }
 
+.tab-content .date-mobile {
+    color: black;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
 .tab-content .company {
     color: black;
     text-decoration: underline;
+}
+
+.tab-content .company:hover {
+    color: #BA5B0D;
 }
 
 .tab-pane {
@@ -397,6 +425,10 @@ h1 {
     color: #000;
 }
 
+.fab:hover {
+    color: #BA5B0D;
+}
+
 .footer .container {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -446,7 +478,7 @@ h1 {
 
 .scroll-icon {
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     animation: bobbing 2s infinite;

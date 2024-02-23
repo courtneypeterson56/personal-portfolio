@@ -1,4 +1,22 @@
 /* Gloabl Styles */
+#see-more-btn {
+    background-color: transparent;
+    color: #fafafd;
+    border: solid white 1px;
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#see-more-btn:hover {
+    background-color: #ecb98c; 
+}
+
+.view-more {
+    text-align: center;
+}
 
 .vertical-line {
     border-left: 3px solid #dee2e6;
@@ -27,6 +45,11 @@ body {
 h1 {
     font-family: Poppins, sans-serif;
     color: #0bc2ac;
+    margin-bottom: 1.5rem !important;
+}
+
+h3 {
+    font-family: Poppins, sans-serif;
 }
 
 .title {
@@ -90,11 +113,13 @@ h1 {
 
 .navbar {
     background:rgb(16, 16, 24);
+    padding: 1rem !important;
 }
 
 .nav-link {
     color: #fafafd !important;
     font-size: 1.1rem;
+    font-family: Poppins, sans-serif;
 }
 
 .nav-link:hover {
@@ -163,16 +188,24 @@ h1 {
 }
 
 #section1 h1 {
-    padding: 20% 5% 0 5%;
+    padding-top: 50%;
     font-weight: 700;
     letter-spacing: -.025rem;
     font-family: Poppins, sans-serif;
     font-size: 2rem;
+    text-align: center;
+    line-height: 2.75rem;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-@media only screen and (min-width: 576px) {
+
+@media only screen and (min-width: 767px) {
     #section1 h1 {
         font-size: 3rem;
+        text-align: left;
+        padding: 20% 5% 0 5%;
+        line-height: 4rem;
     }
 }
 
@@ -181,10 +214,10 @@ h1 {
     padding: .1em .25em;
     background: #0bc2ac;
     color: #101018;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 767px) {
     .highlight {
         font-size: 2.6rem;
     }
@@ -200,7 +233,7 @@ h1 {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: #C1867B;
+    background-color: #0bc2ac;
     transform: rotate(-45deg);
     clip-path: polygon(50% 0%,
             61% 35%,
@@ -323,7 +356,7 @@ h1 {
 }
 
 #section2, #section4 {
-    padding: 100px 0 100px 0;
+    padding: 70px 0 100px 0;
 }
 
 #section2 .tab-content {
@@ -554,6 +587,7 @@ h1 {
     display: flex;
     padding-top: 17px;
     padding-left: 0;
+    max-width: 70%;
 }
 
 .languages li {

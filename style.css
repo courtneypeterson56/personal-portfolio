@@ -1,4 +1,11 @@
 /* Gloabl Styles */
+@media only screen and (min-width: 992px) {
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
 #see-more-btn {
     background-color: transparent;
     color: #fafafd;
@@ -785,5 +792,3 @@ code {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
-

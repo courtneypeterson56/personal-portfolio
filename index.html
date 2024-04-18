@@ -41,17 +41,50 @@
     </nav>
 
     <!-- Sections -->
-    <div>
+    <div class="container-fluid">
         <div class="row hero">
             <!-- Sections -->
             <div id="section1" class="col-12 px-0">
                 <div class="stars-container">
                     <!--JS added spans-->
                 </div>
-                <div class="col-12 col-md-10 offset-lg-1 px-0 text-left">
+                <div id="fade-in-div"  class="row">
+                <div class="col-sm-12 col-md-7 offset-lg-1 px-0 text-left">
                     <h1 class="title">Hi, I’m Courtney. <br />A <span class="highlight"> frontend engineer. </span><br /> I create
                         meaningful digital spaces.</h1>
                 </div>
+                <div class="col-sm-10 offset-2 col-md-5 offset-md-0 col-lg-4 px-0">
+                    <div class="code-box slide-in">
+                        <div class="circle circle-red"></div>
+                        <div class="circle circle-yellow"></div>
+                        <div class="circle circle-green"></div>
+                        <div class="code-container">
+                            <div class="code-lines">
+                                <div class="code-line">1</div>
+                                <div class="code-line"> 2</div>
+                                <div class="code-line"> 3</div>
+                                <div class="code-line"> 4</div>
+                                <div class="code-line"> 5</div>
+                                <div class="code-line"> 6</div>
+                                <div class="code-line"> 7</div>
+                                <div class="code-line"> 8</div>
+                                <div class="code-line"> 9</div>
+                                <div class="code-line"> 10</div>
+                                <div class="code-line"> 11</div>
+                                <div class="code-line"> 12</div>
+                            </div>
+                            <div class="code-out">
+                                <code><span style="color: #d488d4">import </span> { <a href="#section2" target="_blank" class="code-resume-link">resume</a> } <span style="color: #d488d4">from</span>  <span style="color: #ffad91">'Courtney'</span>;</code><br><br>
+                                <code><span style="color: #d488d4">const </span>myTechStack = { </code><br>
+                                <code style="padding-left: 20px;"><span class="blue">languages :</span> [ <span style="color: #ffad91">"JavaScript", "React",  "HTML", "CSS", </span><span class="blue">...more</span>],</code><br>
+                                <code style="padding-left: 20px;"><span class="blue">frameworks :</span> [<span style="color: #ffad91">"React", "Handlebars.js", "jQuery", "Django","Bootstrap", "Foundation" </span>]</code><br>
+                                <code>}</code><br>
+                                <code><span class="blue">console</span>.<span style="color: #d488d4">log(</span><span style="color: #ffad91">`See Them In Action: </span>${ <a href="#section3" target="_blank" class="code-resume-link">resume.projects</a> }`);</code>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
         <div class="scroll-icon">
@@ -64,11 +97,19 @@
                 <!-- Sections -->
                 <div id="section2" class="text-center">
                     <h1>EXPERIENCE</h1>
-                    <h6><a href="CourtneyPeterson-Resume.pdf" class="download" target="_blank">Download Resume <i
-                                class="fa fa-download"></i></a></h4>
+                    <div class="">
+                        <a href="CourtneyPeterson-Resume.pdf" class="download" target="_blank">
+                            <button id="download-btn">Download Resume <i
+                                class="fa fa-download"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <!-- <h6><a href="CourtneyPeterson-Resume.pdf" class="download" target="_blank">Download Resume <i
+                                class="fa fa-download"></i></a></h4> -->
                         <div class="scrollNav" style="overflow-x: auto; white-space: nowrap;">
                             <ul class="nav nav-tabs">
-                                <li><a data-toggle="tab" href="#menu1" class="active">Rapid7</a></li>
+                                <li><a data-toggle="tab" href="#menu0" class="active">Friendate</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Rapid7</a></li>
                                 <li><a data-toggle="tab" href="#menu2">The Kitab Foundation</a></li>
                                 <li><a data-toggle="tab" href="#menu4">Gravyty</a></li>
                                 <li><a data-toggle="tab" href="#menu5">WICS</a></li>
@@ -78,57 +119,48 @@
                             </ul>
                         </div>
                         <div class="tab-content text-left col-11 mx-auto">
-                            <div id="menu1" class="tab-pane active">
-                                <h6><a href="https://www.rapid7.com" class="company" target="_blank">RAPID7</a></h6>
+                            <div id="menu0" class="tab-pane active">
+                                <h6>FRIENDATE</h6>
                                 <div class="container" style="margin-top: 20px">
                                     <div class="row">
                                         <div class="test col-12 col-md-10">
-                                            <p class="date-mobile d-block d-md-none">February 2021 - Present </p>
-                                            <p class="position">Front End Engineer</p>
-                                            <ul>
-                                                <li>Architected, implemented, and optimized 30+ scalable user interface components, while maintaining 400+ components across 3 web applications, utilizing JavaScript, React, HTML, CSS, Foundation, Sass, jQuery, and Handlebars.js</li>
-                                                <li>Developed and implemented demo/trial pages and JavaScript-powered forms for 8 products, resulting in an average conversion rate increase of 300% across all products</li>
-                                                <li>Consolidated and condensed 35+ JavaScript files and 110+ stylesheets into optimized bundles, resulting in a 14% increase in website performance and SEO</li>
-                                                <li>Implemented the complete redesign of various marketing-priority pages from design wireframes, encompassing 250+ subpages combined, resulting in responsive, accessible, cross-browser compatible, and enhanced user experience
-                                                </li>
-                                                <li>Streamlined design system, resulting in removal of 1,000+ lines of redundant code and standardization of 50+ UI designs</li>
-                                                <li>Refactored main site in adherence to WCAG accessibility standards, ensuring inclusive digital experience for all users</li>
-                                                <li>Contributed to backend development, ensuring seamless integration of frontend components, APIs, CMS templates, and other elements with backend infrastructure, using C#, .NET, and Node.js</li>
-                                            </ul>
+                                            <p class="date-mobile d-block d-md-none">February 2024 - Present </p>
+                                            <p class="position">Frontend Software Engineer & UX Contractor</p>
+                                            <p>Desiging and developing a React Native app for Boston College intended for use by campus clubs and freshman orientation programs. Recently led the design strategy, leveraging Figma to create immersive mockups and prototypes, and currently am in the architecture planning phase.</p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">Present</p>
                                             <div class="vertical-line"></div>
+                                            <p class="date">January 2024</p>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class="tab-pane">
+                                <h6><a href="https://www.rapid7.com" class="company" target="_blank">RAPID7</a></h6>
+                                <div class="container" style="margin-top: 20px">
+                                    <div class="row">
                                         <div class="test col-12 col-md-10">
-                                            <p class="date-mobile d-block d-md-none">August 2020 - February 2021</p>
-                                            <p class="position">Growth Strategy Associate Rotational Program​</p>
-                                            <ul>
-                                                <li>Front End Web Engineer: placed full-time
-                                                    upon program completion</li>
-                                                <li>Marketing Operations Analyst: Analyzed 5+ dynamic International and
-                                                    North America sales data and performance
-                                                    reports for
-                                                    weekly and monthly reporting to VP of Sales; Translated 10+
-                                                    Salesforce and Domo reports into a single Tableau
-                                                    dashboard
-                                                    for more functional and comprehensive reporting</li>
-                                                <li>Customer Success Associate: Analyzed 1000+ customer responses from 3
-                                                    waves of NPS survey data with Excel and
-                                                    Gainsight;
-                                                    Led presentations to 5 key stakeholders and 4 internal departments,
-                                                    providing insights and visualization into
-                                                    customer
-                                                    loyalty trends; Conducted 20 post-survey customer interviews to
-                                                    gather accompanied qualitative data</li>
-                                                <li>Customer Adoption Manager: Onboarded 60 customers through their
-                                                    first 90 days and assisted them with necessary
-                                                    technical
-                                                    milestones via Gainsight and Salesforce</li>
-                                            </ul>
+                                            <p class="date-mobile d-block d-md-none">December 2020 - January 2024 </p>
+                                            <p class="position">Front End Engineer</p>
+                                            <p>One of two front-end developers on a team of 5, contributing to the development of Rapid7’s marketing site, as well as two React marketing web applications. I was responsible for architecting and developing the frontend for net new pages and components, based on Figma design wireframes, as well as maintaining and optimizing the existing ones, working primarily with JavaScript, HTML, CSS. I also led various frontend projects in optimizing and refactoring for better performance, accessibility, and overall increased consistency across the site. Working in a small development team, I often collaborated with cross-functional teams including stakeholders, product management, design, content, and marketing.</p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
-                                            <p class="date">February 2021</p>
+                                            <p class="date">January 2024</p>
+                                            <div class="vertical-line"></div>
+                                        </div>
+                                        <div class="test col-12 col-md-10">
+                                            <p class="date-mobile d-block d-md-none">August 2020 - December 2020</p>
+                                            <p class="position">Growth Strategy Associate Rotational Program​</p>
+                                            <p>Rotated through multiple roles including Frontend Engineer, Customer Adoption Manager, Customer Success Associate,
+                                                and Marketing Operations Analyst. Drove impactful outcomes across diverse roles and responsibilities, including analyzing sales data for weekly and monthly reporting to VP of Sales, translating Domo reports to Tableau, leading presentations on insights and visualization into
+                                                customer
+                                                loyalty trends, and onboarding customers through their first 90 days and assisted them with necessary
+                                                technical
+                                                milestones.</p>
+                                        </div>
+                                        <div class="timeline col-2 d-none d-md-flex">
+                                            <p class="date">December 2020</p>
                                             <div class="vertical-line"></div>
                                             <p class="date">August 2020</p>
                                         </div>
@@ -143,15 +175,13 @@
                                         <div class="test col-12 col-md-10">
                                             <p class="date-mobile d-block d-md-none">January 2021 - Present</p>
                                             <p class="position">Lead Web Developer</p>
-                                            <ul>
-                                                <li>Designed, created, and launched the main marketing
+                                            <p>Designed, created, and launched the main marketing
                                                     website for The Kitab Foundation, a 501(c)(3)
-                                                    nonprofit that addresses refugee and immigrant children's literacy
-                                                </li>
-                                                <li>Collaborate closely with the nonprofit’s founder to understand his
+                                                    nonprofit that addresses refugee and immigrant children's literacy.
+                                                    Collaborate closely with the nonprofit’s founder to understand his
                                                     vision and translate it into an engaging online
-                                                    presence and optimal user experience, utilizing JavaScript, HTML, CSS, and Netlify</li>
-                                            </ul>
+                                                    presence and optimal user experience, utilizing JavaScript, HTML, CSS, and Netlify.
+                                            </p>                                        
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">Present</p>
@@ -168,15 +198,13 @@
                                         <div class="test col-12 col-md-10">
                                             <p class="date-mobile d-block d-md-none">May 2019 - December 2019</p>
                                             <p class="position">UX Engineer Intern</p>
-                                            <ul>
-                                                <li>Designed and developed 5 of Gravyty’s main site pages, main
+                                            <p>Designed and developed 5 of Gravyty’s main site pages, main
                                                     navigation, and lead AI-enabled email product using Figma,
                                                     HTML, CSS, Bootstrap, jQuery, and Django, driving a record quarter
-                                                    in lead generation</li>
-                                                <li>Enhanced marketing efficiency by implementing a database-driven
+                                                    in lead generation. Enhanced marketing efficiency by implementing a database-driven
                                                     approach using Django, resulting in a significant shift
-                                                    towards dynamic site pages</li>
-                                            </ul>
+                                                    towards dynamic site pages
+                                            </p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">December 2019</p>
@@ -194,11 +222,9 @@
                                     <div class="row">
                                         <div class="test col-12 col-md-10">
                                             <p class="date-mobile d-block d-md-none">September 2018 - May 2020</p>
-                                            <p class="position">President and eBoard Web Developer</p>
-                                            <ul>
-                                                <li>President and event planner. Designed and developed Boston College's
-                                                    Women in Computer Science's main website</li>
-                                            </ul>
+                                            <p class="position">President and Web Developer</p>
+                                            <p>President of Women In Computer Science at Boston College, planning events and recruiting events. Designed and developed Boston College's
+                                                    Women in Computer Science's main website.</p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">May 2020</p>
@@ -217,12 +243,10 @@
                                         <div class="test col-12 col-md-10">
                                             <p class="date-mobile d-block d-md-none">June 2018 - August 2018</p>
                                             <p class="position">UI/UX Design and Web Development Intern​</p>
-                                            <ul>
-                                                <li>Developed and integrated UI/UX web design into interactive and
+                                            <p>Developed and integrated UI/UX web design into interactive and
                                                     responsive wireframes for client websites to illustrate
                                                     site design and functionality using Framer, Adobe Photoshop, and
-                                                    Illustrator</li>
-                                            </ul>
+                                                    Illustrator</p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">August 2018</p>
@@ -241,11 +265,9 @@
                                         <div class="test col-12 col-md-10">
                                             <p class="date-mobile d-block d-md-none">September 2017 - May 2018</p>
                                             <p class="position">Computer Science Teaching Assistant</p>
-                                            <ul>
-                                                <li>Assisted Professor with classroom instruction, grading, and office
+                                            <p>Assisted Professor with classroom instruction, grading, and office
                                                     hours. Lead and designed lesson plans for weekly
-                                                    discussion group and lab for 30 students</li>
-                                            </ul>
+                                                    discussion group and lab for 30 students.</p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">May 2018</p>
@@ -263,11 +285,9 @@
                                         <div class="test col-12 col-md-10">
                                             <p class="date-mobile d-block d-md-none">June 2017 - August 2017</p>
                                             <p class="position">Programming and Robotics Instructor</p>
-                                            <ul>
-                                                <li>Designed and taught unique weekly lesson plans to 16 students each
+                                            <p>Designed and taught unique weekly lesson plans to 16 students each
                                                     week, ages 7-12, featuring the basics of electrical engineering,
-                                                    programming, and robotics</li>
-                                            </ul>
+                                                    programming, and robotics.</p>
                                         </div>
                                         <div class="timeline col-2 d-none d-md-flex">
                                             <p class="date">August 2017</p>
@@ -431,7 +451,7 @@
                                     </div>
                                     <div class="col-11 col-sm-12 col-lg-7 offset-lg-0 order-lg-1 description-box">
                                         <div class="description">
-                                            <h3>Customer Pages</h2>
+                                            <h3>Customer Stories</h2>
                                                 <h6>WEB DEVELOPMENT</h6>
                                                 <p>Implemented the complete redesign of the Customer pages based on design
                                                     wireframes, encompassing 3 sub-templates and150+

@@ -223,8 +223,20 @@ h3 {
     }
 }
 
+.fade-in-scroll {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.fade-in-scroll.active-scroll {
+    opacity: 1;
+}
 
 #fade-in-div {
+    opacity: 0;
+}
+
+.fade-in-div {
     opacity: 0;
 }
 
@@ -238,6 +250,9 @@ h3 {
 }
 
 #fade-in-div {
+    animation: fade-in 1.5s ease-in-out forwards;
+}
+.fade-in-div {
     animation: fade-in 1.5s ease-in-out forwards;
 }
 
@@ -345,6 +360,12 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     animation: bobbing 2s infinite;
+}
+
+@media only screen and (max-width: 767px) {
+    .scroll-icon {
+        display: none;
+    }
 }
 
 .fa-arrow-down {

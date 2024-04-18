@@ -1,9 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
+  window.onbeforeunload = function () {
+    window.scrollTo(0,0);
+};
+
+  var fadeElements = document.querySelectorAll('.fade-in-scroll');
   const navbar = document.querySelector(".navbar-collapse");
   const navLinks = document.querySelectorAll(".nav-link");
   const section1 = document.getElementById("section1");
   const stars = [];
   const starsContainer = document.querySelector(".stars-container");
+
+  function checkFade() {
+    fadeElements.forEach(function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('active-scroll');
+        }
+    });
+}
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  var elementTop = rect.top;
+  var elementBottom = rect.bottom;
+  
+  return (
+      (elementTop >= 0 && elementTop <= windowHeight - 50) ||
+      (elementBottom >= 0 && elementBottom <= windowHeight - 50)
+  );
+}
+
+
+// Trigger fade on page load
+checkFade();
+
+// Trigger fade when scrolling
+window.addEventListener('scroll', checkFade);
 
   // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

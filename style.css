@@ -150,19 +150,19 @@ h3 {
 
 /* Nav Tabs */
 
-#section2 .nav-tabs {
+#experience-section .nav-tabs {
     border-bottom: none !important;
     display: flex !important;
     flex-wrap: nowrap !important;  
 }
 
 @media only screen and (min-width:1278px) {
-    #section2 .nav-tabs {
+    #experience-section .nav-tabs {
         justify-content: center;
     }
 }
 
-#section3 .nav-tabs {
+#projects-section .nav-tabs {
     border-bottom: none !important;
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -205,11 +205,11 @@ h3 {
 
 /* Hero -- Section 1 */
 
-#section1 {
+#home-section {
     height: 100vh;
 }
 
-#section1 h1 {
+#home-section h1 {
     padding-top: 10%;
     font-weight: 700;
     letter-spacing: -.025rem;
@@ -222,7 +222,7 @@ h3 {
 
 
 @media only screen and (min-width: 767px) {
-    #section1 h1 {
+    #home-section h1 {
         font-size: 3rem;
         text-align: left;
         padding-top: 25%;
@@ -522,11 +522,11 @@ code {
     transform: translateY(2px);
 }
 
-#section2, #section4 {
+#experience-section, #contact-section {
     padding: 70px 20px 100px 20px;
 }
 
-#section2 .tab-content {
+#experience-section .tab-content {
     border-radius: 25px;
     box-shadow: 2px 2px 11px -3px rgba(0, 0, 0, .2);
     background: #1f1f24;
@@ -534,7 +534,7 @@ code {
 }
 
 @media only screen and (min-width: 992px) {
-    #section2 .tab-content {
+    #experience-section .tab-content {
         margin: 50px -15px 0 -15px;
     }
 }
@@ -599,7 +599,7 @@ code {
 
 /* Projects -- Section 3 */
 
-#section3 {
+#projects-section {
     padding: 100px 0 0 0;
 }
 

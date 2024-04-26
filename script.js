@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var fadeElements = document.querySelectorAll('.fade-in-scroll');
   const navbar = document.querySelector(".navbar-collapse");
   const navLinks = document.querySelectorAll(".nav-link");
-  const section1 = document.getElementById("section1");
+  const section1 = document.getElementById("home-section");
   const stars = [];
   const starsContainer = document.querySelector(".stars-container");
 
